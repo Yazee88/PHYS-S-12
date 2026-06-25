@@ -1,44 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>See config.js</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../style.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 1 · Brainstorming</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .problem-blob {
+      position: relative;
+      margin: 2.5rem 0;
+    }
+    .problem-blob svg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      overflow: visible;
+    }
+    .problem-blob .blob-inner {
+      position: relative;
+      z-index: 1;
+      padding: 2.5rem 3rem;
+    }
+    .idea-divider {
+      border: none;
+      border-top: 1px solid var(--secondary-color);
+      margin: 4rem 0;
+    }
+    .idea-number {
+      font-family: var(--mono-font-family);
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent-color);
+      margin-bottom: 1rem;
+    }
+    .idea-title {
+      font-family: var(--font-family);
+      font-size: clamp(3.5rem, 8vw, 7rem);
+      font-weight: 300;
+      line-height: 0.95;
+      letter-spacing: -0.02em;
+      margin-bottom: 2.5rem;
+    }
+  </style>
+</head>
 
-  <nav>
-    <a id="home" href="../index.html">Home</a>
-    <a href="../index.html#final-project">Work</a>
-    <a href="../about.html">About</a>
-  </nav>
+<nav>
+  <a id="home" href="../index.html">Guru</a>
+  <a href="../about.html">About</a>
+  <a href="../index.html#work">Work</a>
+</nav>
 
-  <body>
-    <section class="blog">
+<body>
+  <section class="blog">
 
-      <b>Before you start making your website, be sure to check out <a href="../README.html">README.html</a>!!!</b>
+    <p class="blog-meta">Week 01 · Brainstorming · June 23rd 2026</p>
+    <h1>Final Project<br>Proposals</h1>
 
-      <h1>Week 1: Final Project Proposal</h1>
+    <p>
+      Week 1.  First assignment, a fresh start. 
+    </p>
+    <p>
+      It has urged me to brainstorm ideas for the final week.
+      Here are three directions I'm thinking about, each rooted in 
+      a real problem I want to solve.
+    </p>
 
-      <h2>Project Idea 1</h2>
+    <hr class="idea-divider">
 
-      <p>
-        What inspired you to create this project? What do you think this project will look like once it's completed?
-      </p>
+    <p class="idea-number">Idea 01</p>
+    <h2 class="idea-title">Embrace</h2>
 
-      <!-- Media should be put in the asset folder of their respective week -->
-      <img src="./Assets/Sketch.JPG" alt="">
-      <p class="caption">Include some sketches and pictures!</p>
+    <h3><b>The Problem:</b> A Peek into the Traditional Brace</h3>
+    <p>
+      Standard emergency and post-surgical neck braces are built like ancient torture devices:
 
-      <h2>Project Idea 2</h2>
+<ul>
+  <li>Traps heat and sweat</li>
+  <li>Compresses the jaw</li>
+  <li>Causes severe pressure ulcers on the chin and collarbones</li>
+</ul> 
+      These are functional in the crudest sense and for patients who need to wear one for weeks 
+      post-surgery, this is not a minor inconvenience. It's a source of 
+      constant, avoidable suffering.
+    </p>
 
-      <h2>Project Idea 3</h2>
-    </section>
-  </body>
+    <div class="problem-blob">
+      <svg viewBox="0 0 700 260" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M 20 20 
+                 Q 200 10, 350 80 
+                 Q 500 150, 680 60 
+                 L 680 200 
+                 Q 500 280, 350 200 
+                 Q 180 120, 20 220 Z" 
+              fill="#E8DDD0" opacity="0.6"/>
+      </svg>
+      <div class="blob-inner">
+        <h3 style="margin-top:0;">Design Opportunity</h3>
+        <p style="margin-bottom:0;">
+          Paramedics have to guess the sizing under high-stress conditions, and patients have to endure the discomfort of a device
+           that is not designed for their body.
+          
+          With an exoskeleton-like approach, I plan to create a lattice patterned structure that is breathable, 
+          self sizing and biocompatible as the soft robotic bladders shall distribute pressure evenly, preventing pressure sores.
+        </p>
+      </div>
+    </div>
 
-  <footer>See config.js</footer>
+    <h3>Project Proposal</h3>
+    <p>
+      <strong>Embrace</strong> is a self sizing, breathable, and smart neck brace that prioritizes patient comfort and
+       disaster relief without compromising immobilization. 
+      
+          </p>
+    <p><b>Objective:</b> Design a neck brace that feels like an extension of the self, rather than an intrusion.
+    </p>
+    <p>
+      A study of the current brace's pressure points/airflow and the FDA regulations will inform the design of the new brace, integrating
+      wearable technology and soft robotics to create a device that is not only functional but also humane. I am planning to connect with
+      Harvard and MIT medical research groups, faculty and students to get feedback on the design and its potential impact. If anyone
+      has connections in the medical device space, I would love to collaborate and learn from them.
+    </p>
 
-  <script src="../config.js"></script>
-  <script src="../slideshow.js"></script>
+    <img src="../placeholder_assets/Embrace_sketch.jpg" alt="Embrace sketch">
+    <p class="caption">Early concept sketches for Embrace</p>
+
+    <hr class="idea-divider">
+
+    <p class="idea-number">Idea 02</p>
+    <h2 class="idea-title">The Womb</h2>
+
+    <h3>The Problem</h3>
+    <p>Initial research focused on posture, body mechanics, and comfort behaviors during pregnancy. 
+      Observations indicate that many individuals naturally lean forward or seek surfaces to rest their upper body weight, 
+      reducing strain on the lower back. The growing abdomen creates discomfort in traditional seated positions due to 
+      compression and lack of spatial accommodation.</p>
+
+    <h3>Design Opportunity</h3>
+    <p>
+      <ul>
+        <li>Traps heat and sweat</li>
+        <li>Support the abdomen without applying pressure</li>
+        <li>Reduce lower back and pelvic strain</li>
+        <li>Adapt to different stages of pregnancy</li>
+        <li>Encourage natural resting positions</li>
+        <li>Maintain stability and safety</li>
+        <li>Explore innovative manufacturing processes</li>
+      </ul>
+    </p>
+
+    <h3>Project Proposal</h3>
+    <p> A belly suporting resting embrace that shelters the womb and relieves pregnant women with support.      
+<ul>
+<li>Belly accommodation (void, cradle, or flexible surface)</li>
+<li>Forward-leaning support</li>
+<li>Stable base structure</li>
+<li>Easy entry and exit</li>
+<li>Rotomolded hollow shells for smooth, continuous forms</li>
+<li>CNC or wire-cut internal structures for support</li>
+<li>Hybrid systems combining rigid frames with soft inserts</li>
+
+</ul>
+    </p>
+
+    <img src="../placeholder_assets/Womb_sketch.jpg" alt="The Womb">
+    <img src="../placeholder_assets/Womb_1.jpg" alt="The Womb">
+    <img src="../placeholder_assets/Womb_2.jpg" alt="The Womb">
+    <img src="../placeholder_assets/Womb_3.jpg" alt="The Womb">
+    <img src="../placeholder_assets/Womb_4.jpg" alt="The Womb">
+    <p class="caption">The Womb Prototype Processes and Concepts</p>
+
+    <hr class="idea-divider">
+
+    <p class="idea-number">Idea 03</p>
+    <h2 class="idea-title">Stühl</h2>
+
+    <h3>Backstory</h3>
+    <p>I work as a Library Circulation Desk Assistance on- campus at Pratt and wanted to create a mini library
+       for student workers to access during work hours. It is compartmentalised based on the stack system of Pratt 
+       Institute Library, optimising it for circulation.</p>
+
+    <h3>Design Opportunity</h3>
+    <p>Student workers and librarians can recommend books to each other or strike conversations through the common books 
+      read on the shelf, boosting work morale. The form appears like that of a chair to follow the library's theme of honouring 
+      famous historical chairs.</p>
+
+      <img src="../placeholder_assets/Stühl_sketch.jpg" alt="Stühl">
+      <img src="../placeholder_assets/Stühl_1.png" alt="Stühl">
+      <img src="../placeholder_assets/Stühl_2.png" alt="Stühl">
+      <img src="../placeholder_assets/Stühl_3.png" alt="Stühl">
+      <p class="caption">Acrylic Bending, Modelled in Autodesk Maya, Rendered in Arnold and Keyshot</p>
+
+    <h3></h3>
+    <p></p>
+
+  </section>
+</body>
+
+<footer></footer>
+<script src="../config.js"></script>
+<script src="../slideshow.js"></script>
 </html>
